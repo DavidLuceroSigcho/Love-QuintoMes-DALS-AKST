@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=750,user-scalable=no">
+    <meta name="author" content="ShaoZeMing,szm19920426@gmail.com beijing">
+    <title>FELIZ QUINTO MES</title>
+    <style type="text/css">
+        @font-face {
+            font-family: digit;
+            src: url('./public/digital-7_mono.ttf') format("truetype");
+        }
+    </style>
+    <link href="./jscss/default.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="./jscss/jquery.js"></script>
+    <script type="text/javascript" src="./jscss/garden.js"></script>
+    <script type="text/javascript" src="./jscss/functions.js"></script>
+</head>
+
+<body>
+<div id="mainDiv"style="position:relative;width:100%;height: 1334px;">
+    <div id="content"style="position:absolute;float: left; width:100% ;height:680px;left:0;top:0">
+        <div id="code"style="position:absolute;float: left; width:100% ;height:680px;top:200px;text-align: center">
+            <span class="comments">/**</span><br>
+                <span class="space"><span class="comments">Soy un programador</span><br>
+                <span class="space"><span class="comments">¡Así que uso código para describir nuestra historia!</span><br>
+                <span class="space"><span class="comments">*/</span><br>
+                Boy i = <span class="keyword">new</span> Boy(<span class="string">David Lucero Sigcho</span>);<br>
+                Girl u = <span class="keyword">new</span> Girl(<span class="string">Andres Shiguango Tanguila</span>);<br>
+                <span class="comments">// Nuestro Inicio -> 2021:09:11 - 20:40PM GMT-5 </span><br>
+                i.love(u);<br>
+                u.sayOtherthing();<br>
+                <span class="comments">//Sé que aún no nos conocemos en persona. </span><br>
+                <span class="keyword">var</span> reason=i.ask(u);<br>
+                <span class="comments">//Pero en poco tiempo te convertiste en una persona maravillosa. </span><br>
+                $("body").append(reason);<br>
+                <span class="comments">//Donde en poco tiempo comprender tu estado de ánimo.</span><br>
+                <span class="comments">// Te prometo cuidar de ti y de nuestro amor.</span><br>
+                i.takeCareOf(u);<br>
+                <span class="comments">//Sueño que estamos corriendo en nuestra propio jardin que tú sigues corriendo y yo sigo persiguiendorte.</span><br>
+                <span class="keyword">boolean</span> isAccept = <span class="keyword">false</span>;<br>
+                <span class="keyword">while</span> (isAccept) {<br>
+                <span class="placeholder">i.waitFor(u);<br>
+                <span class="placeholder"><span class="comments">// // Que tu pendejadas me lastimas que aun no me rindo tan facil porque estoy resistiendo hasta el ultimo suspiro de mi profundo corazon para poder llegar a tu valioso corazon.</span><br>
+                <span class="placeholder"><span class="comments">// Estoy aun de pie para continuar superando los obstaculos para poder cumplir nuestro sueño y alfin formar nuestra propia familia</span><br>
+                <span class="placeholder">isAccept = u.thinkOver();<br>
+                }<br>
+                <span class="comments">//No me rendire hasta que formemos nuestro hogar y tener nuestra propia casa. </span><br>
+                u.accept(i);<br>
+                i.liveHappilyWith(u);<br>
+
+            </span></span></span></span></span></span></span>_
+        </div>
+    </div>
+    <div id="loveHeart" style="position:absolute;float: left; width:100% ;height:840px;left:0;top:0px">
+        <canvas id="garden"></canvas>
+        <div id="words" style="position: absolute ; text-align: center">
+            <div id="messages" style="display: block;">
+                <section style="text-align: center">
+                    <script type="text/javascript"><!--
+                    google_ad_client = "ca-pub-3712320065678109";
+                    /* lovead */
+                    google_ad_slot = "0650322805";
+                    google_ad_width = 320;
+                    google_ad_height = 50;
+                    //-->
+                    </script>
+                </section>
+                ¡Oficial, no se entusiasme! Por favor, continuar.
+                <div id="elapseClock" style="display:none"></div>
+                <br>
+                <a href="index3.html" id="accept">Haz clic</a>
+            </div>
+            <div id="loveu" style="display: block;">
+                Persiguiéndote y amandorte, por los siglos de los siglos.<br>
+
+                <div class="signature">- David Lucero Sigcho</div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    var offsetX = $("#loveHeart").width() / 2;
+    var offsetY = $("#loveHeart").height() / 2 - 55;
+    if (!document.createElement('canvas').getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none")
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+    } else {
+        setTimeout(function () {
+            adjustWordsPosition();
+            startHeartAnimation();
+        }, 10000);
+
+        $("#accept").click(function () {
+            $(this).hide();
+            $("#elapseClock").show();
+            var together = new Date();
+            timeElapse(together);
+            setInterval(function () {
+                timeElapse(together);
+            }, 500);
+        })
+        adjustCodePosition();
+        $("#code").typewriter();
+    }
+</script>
+<audio src="./public/shangfen.mp3" autoplay="autoplay"></audio>
+</body>
+</html>
